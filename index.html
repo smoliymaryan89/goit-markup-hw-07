@@ -20,8 +20,8 @@
   <body>
     <header class="header">
       <div class="container header-container">
+        <a href="./index.html" class="header-logo link">Web<span class="logo">Studio</span></a>
         <nav class="nav">
-          <a href="./index.html" class="header-logo link">Web<span class="logo">Studio</span></a>
           <ul class="nav-list list">
             <li class="nav-item">
               <a href="./index.html" class="nav-link link current">Studio</a>
@@ -44,6 +44,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="header-menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-menu-icon" width="32" height="22">
+            <use href="./images/icons/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -55,6 +65,7 @@
           </div>
         </div>
       </section>
+
       <section class="section features-section">
         <div class="container">
           <h2 class="section-title visually-hidden">Our Features</h2>
@@ -110,6 +121,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section work-section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
@@ -141,6 +153,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -311,6 +324,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section customers-section">
         <div class="container">
           <h2 class="section-title">Customers</h2>
@@ -423,6 +437,7 @@
         </div>
       </div>
     </footer>
+    <!-- BACKDROP -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -478,6 +493,71 @@
         </form>
       </div>
     </div>
+
+    <!-- HEADER MENU BURGER -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-btn-icon" width="8" height="8">
+          <use href="./images/icons/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-list list">
+        <li class="menu-item">
+          <a href="./index.html" class="menu-link link">Studio</a>
+        </li>
+        <li class="menu-item">
+          <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link link">Contacts</a>
+        </li>
+      </ul>
+      <div class="menu-contacts-socials">
+        <ul class="menu-contacts-list list">
+          <li class="menu-contacts-item">
+            <a href="tel:+110001111111" class="menu-contacts-link link">+11 (000) 111-11-11</a>
+          </li>
+          <li class="menu-contacts-item">
+            <a href="mailto:info@devstudio.com" class="menu-contacts-link link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-socials-list list">
+          <li class="menu-socials-item">
+            <a href="" class="menu-socials-link link">
+              <svg class="menu-socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-socials-item">
+            <a href="" class="menu-socials-link link">
+              <svg class="menu-socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-socials-item">
+            <a href="" class="menu-socials-link link">
+              <svg class="menu-socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-socials-item">
+            <a href="" class="menu-socials-link link">
+              <svg class="menu-socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
