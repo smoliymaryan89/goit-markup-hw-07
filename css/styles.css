@@ -227,25 +227,71 @@ body {
 }
 /* HERO */
 .hero-section {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
   margin: 0 auto;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  max-width: 1440px;
+
   background-color: var(--navy-blue-bg-cl);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero/hero-overlay.jpg);
+    url(../images/hero/hero-bg_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/hero-bg_mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .hero-section {
+    padding-top: 111px;
+    padding-bottom: 108px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/hero-bg_tab@1x.jpg);
+  }
 
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-sectio {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/hero-bg_tab@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/hero-bg_desk@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-sectio {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/hero-bg_desk@2x.jpg);
+    }
+  }
+}
 .hero-content {
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .hero-content {
-    width: 494px;
+    min-width: 496px;
   }
 }
 .hero-title {
